@@ -63,7 +63,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get(`${API_BASE}/pattern`, {
+      const res = await axios.get(`api/pattern`, {
         params: { symbol, interval },
         timeout: 10000,
       });
